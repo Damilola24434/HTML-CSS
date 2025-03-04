@@ -141,7 +141,7 @@ section h2 {
   margin-bottom: 30px;
   padding: 25px;
   border-radius: 15px;
-  background-color: rgba(41, 39, 38, 0.8); /* Dark brown */
+  background-color: #494543; /* Dark brown */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
