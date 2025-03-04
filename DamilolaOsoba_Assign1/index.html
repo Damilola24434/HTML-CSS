@@ -13,46 +13,46 @@
       content="Welcome to Damilola Osoba's portfolio website."
     />
     <title>Damilola Osoba | Portfolio</title>
-    
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      /* Embedded styles for this page only */
+      .project h3 {
+        color: #111211; /* Green for project titles */
+      }
+    </style>
   </head>
   <body>
     <!-- Header Section -->
     <header>
-      <h1>Welcome to My Profile</h1>
+      <h1 class="animate__animated animate__fadeInDown">Welcome to My Profile</h1>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <!-- Link to homepage -->
-          <li><a href="skills.html">Skills</a></li>
-          <!-- Link to skills page -->
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
         </ul>
       </nav>
-
-
-      <map name="profilemap">
-        <!-- Enlarged clickable area -->
-        <area
-          shape="rect"
-          coords="50,50,550,450"
-          alt="Go to Skills"
-          href="skills.html"
-          target="_blank"
-          title="Go to Skills"
-        />
-      </map>
-      
-       <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Damilola Osoba</h1>
-      <p>Computer Science Student | Aspiring Cloud Engineer & Web Developer</p>
-      <a href="#about" class="btn">Learn More About Me</a>
-    </div>
-  </section>
     </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content animate__animated animate__fadeInUp">
+        <h1>Damilola Osoba</h1>
+        <p>Computer Science Student | Aspiring Cloud Engineer & Web Developer</p>
+        <a href="#about" class="btn">Learn More About Me</a>
+      </div>
+    </section>
+
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="animate__animated animate__fadeIn">
       <h2>About Damilola!!</h2>
       <!-- Profile Image with Image Map -->
       <div style="text-align: center">
@@ -60,7 +60,7 @@
           src="Dami.jpg"
           alt="My Profile Picture"
           usemap="#profilemap"
-          class="project-img"
+          class="project-img animate__animated animate__zoomIn"
           style="
             display: inline-block;
             margin: 0 auto;
@@ -70,16 +70,15 @@
             border-radius: 50%;
           "
         />
-
       </div>
       <p>
-        Hello! My name is <strong>Damilola Osoba</strong>, and I am 
-        a Computer Science student at McNeese State University, 
-        anticipating graduation in May 2026 with a GPA of 3.63. 
+        Hello! My name is <strong>Damilola Osoba</strong>, and I am a Computer
+        Science student at McNeese State University, anticipating graduation in
+        May 2026 with a GPA of 3.63.
       </p>
-      
+
       <hr />
-      
+
       <h3><strong>I am Interested in:</strong></h3>
       <ol>
         <li>Technical Program Management</li>
@@ -89,34 +88,38 @@
         <li>Artificial Intelligence</li>
         <li>AR/VR</li>
       </ol>
-      
+
       <hr />
-      
+
       <h3><strong>Education</strong></h3>
-      <p>Bachelor of Science in Computer Science</strong></p>
+      <p>Bachelor of Science in Computer Science</p>
       <p>McNeese State University, Lake Charles, LA</p>
-      <p>Anticipated Graduation:</strong> May 2026 | <strong>GPA:</strong> 3.63</p>
-      <p>Relevant Coursework:</strong> Database Management, Software Engineering, Data Structures</p>
-      <p>Certifications:</strong> Ethical Hacking Essentials (EHE)</p>
-      
+      <p>Anticipated Graduation: May 2026 | GPA: 3.63</p>
+      <p>Relevant Coursework: Database Management, Software Engineering, Data Structures</p>
+      <p>Certifications: Ethical Hacking Essentials (EHE)</p>
+
       <hr />
-      
+
       <h3><strong>Technical Experience</strong></h3>
       <ul>
-        <li>NASA LaACES Program Participant & Undergraduate Researcher (Aug 2024 – Present)</strong><br>
+        <li>
+          NASA LaACES Program Participant & Undergraduate Researcher (Aug 2024 –
+          Present)<br />
           Developing a high-altitude balloon payload system.
         </li>
-        <li>Hack the Hood: BUILD Data Science Program (Sep 2024 – Present)</strong><br>
+        <li>
+          Hack the Hood: BUILD Data Science Program (Sep 2024 – Present)<br />
           Building predictive models with Python.
         </li>
-        <li>Walmart USA Advanced Software Engineering Virtual Experience (Jun 2024 – Jul 2024)</strong><br>
+        <li>
+          Walmart USA Advanced Software Engineering Virtual Experience (Jun 2024 –
+          Jul 2024)<br />
           Created a product recommendation algorithm.
         </li>
       </ul>
-      
+
       <hr />
-      
-      
+
       <h3><strong>Leadership & Organizations</strong></h3>
       <ul>
         <li>Member, National Society of Black Engineers (NSBE)</li>
@@ -124,57 +127,111 @@
         <li>Member, African and Caribbean Student Association (ACSA)</li>
         <li>Resident Assistant at McNeese State University</li>
       </ul>
-      
-     
-      
-      
-      
 
       <hr />
+
       <div class="fun-fact-container">
         <h3>Fun Fact & Inspiration</h3>
-  
         <p class="fun-fact">
           <strong>Here’s a fun fact:</strong> I love cloud computing &spades;
         </p>
-  
         <blockquote class="quote">
           "Your time is limited, so don't waste it living someone else's life."
           <br />
           <strong>– Steve Jobs</strong>
         </blockquote>
-  
         <p class="tech-resource">
           Check out my favorite tech resource:
-          <a href="https://www.thecloudcast.net/" target="_blank"><strong>CloudCast</strong></a>
+          <a href="https://www.thecloudcast.net/" target="_blank"
+            ><strong>CloudCast</strong></a
+          >
         </p>
       </div>
-  
-
-      
 
       <hr />
-    <h3>How to Reach Me:</h3>
-    <div class="contact-links">
-      <a href="mailto:damilolaosoba41@gmail.com" class="github-btn">
-        Email: <strong>damilolaosoba41@gmail.com</strong>
-      </a>
-      <a href="https://www.linkedin.com/in/damilola-osoba-a304ba282/" class="github-btn" target="_blank">
-        LinkedIn
-      </a>
-      <a href="https://github.com/Damilola24434" class="github-btn" target="_blank">
-        GitHub
-      </a>
-    </div>
 
-      
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="animate__animated animate__fadeIn">
+      <h2>Skills</h2>
+      <ul>
+        <li>Agile methodologies</li>
+        <li>Django</li>
+        <li>React</li>
+        <li>Advanced concepts in Python and Java</li>
+        <li>API development</li>
+        <li>Version Control</li>
+        <li>Program Management skills</li>
+        <li>Data Structures & Algorithms</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="animate__animated animate__fadeIn">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3 style="color: #e0d7d1;">Project 1: Food Kiosk Web Application: Group Project</h3>
+
+        <p>
+          A responsive web-based food kiosk application, developed as a group
+          project. This application allows users to place food orders, customize
+          their orders, and proceed with a dummy checkout process.
+        </p>
+        <img
+          src="project1.png"
+          alt="Project 1 Screenshot"
+          class="project-img animate__animated animate__zoomIn"
+        />
+        <a
+          href="https://github.com/Damilola24434/-Food-kiosks-web-application"
+          class="github-btn"
+          target="_blank"
+        >
+          View on GitHub
+        </a>
+      </div>
+      <hr />
+      <div class="project">
+        <h3 style="color: #e0d7d1;">Project 2: Thread App</h3>
+        <p>
+          A personal time capsule app built with HTML, CSS, and JavaScript. This
+          application allows users to record voice notes or type text
+          reflections, tag each entry with an emotion emoji, and link related
+          entries into threads, creating an organized timeline of personal growth
+          and reflection.
+        </p>
+        <img
+          src="project2.png"
+          alt="Project 2 Screenshot"
+          class="project-img animate__animated animate__zoomIn"
+        />
+        <a
+          href="https://github.com/Damilola24434/ThreadApp"
+          class="github-btn"
+          target="_blank"
+        >
+          View on GitHub
+        </a>
+      </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
       <p>&copy; 2025 Damilola Osoba. All rights reserved.</p>
-      
-
+      <div class="social-icons">
+        <a
+          href="https://linkedin.com/in/damilola-osoba-a304ba282/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/Damilola24434" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://twitter.com" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
     </footer>
   </body>
 </html>
