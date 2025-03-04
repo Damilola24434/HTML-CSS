@@ -1,0 +1,198 @@
+body {
+  font-family: "Roboto", sans-serif; /* Clean, modern font */
+  line-height: 1.6; /* Better readability */
+  margin: 0;
+  padding: 0; /* Remove default spacing */
+  background-color: #6a6969; /* Neutral background */
+  color: #333; /* Dark text for contrast */
+}
+
+header {
+  background-color: #333; /* Dark header */
+  color: #fff; /* White text */
+  padding: 20px 0; /* Spacing */
+  text-align: center; /* Center header */
+}
+
+header h1 {
+  margin: 0; /* No margin */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0; /* Remove bullets and padding */
+  display: flex;
+  justify-content: center; /* Center nav */
+}
+
+nav ul li {
+  margin: 0 15px; /* Horizontal spacing */
+}
+
+nav ul li a {
+  color: #fff; /* White links */
+  text-decoration: none; /* No underline */
+  font-weight: bold; /* Bold links */
+}
+
+nav ul li a:hover {
+  color: #1ecb27; /* Green hover effect */
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Center content */
+  display: grid;
+  gap: 20px; /* Grid layout with gaps */
+}
+
+section {
+  margin-bottom: 40px;
+  background-color: #d6d1d1; /* Light section background */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+section h2 {
+  border-bottom: 2px solid #333; /* Title underline */
+  padding-bottom: 10px; /* Spacing */
+  color: #333; /* Dark text */
+}
+
+.project {
+  margin-bottom: 20px; /* Space below projects */
+}
+
+.project img {
+  border-radius: 15px; /* Rounded images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  display: block;
+  margin: 20px auto; /* Centered image */
+  max-width: 100%;
+  height: auto; /* Responsive images */
+}
+
+footer {
+  background-color: #333; /* Dark footer */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 10px 0; /* Footer spacing */
+  position: relative;
+  bottom: 0;
+  width: 100%; /* Stick to bottom */
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto; /* Responsive */
+  max-height: 300px;
+  margin: 10px 0; /* Max height for image */
+}
+
+.github-btn {
+  display: inline-block;
+  padding: 10px 20px; /* Button padding */
+  background-color: #24292f;
+  color: white; /* GitHub button */
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold; /* No underline */
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease; /* Smooth hover */
+}
+
+.github-btn:hover {
+  background-color: #1a1d23; /* Darker on hover */
+}
+
+.fun-fact-container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px; /* Centered container */
+}
+
+.quote {
+  font-style: italic;
+  color: #555; /* Style for quotes */
+  border-left: 4px solid #007bff;
+  padding-left: 10px; /* Blue border */
+  display: inline-block;
+}
+
+.tech-resource a {
+  color: #007bff; /* Blue links */
+  text-decoration: none;
+  font-weight: bold; /* Bold links */
+}
+
+.tech-resource a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.hero {
+  background-image: url("cloud.jpeg");
+  background-size: cover; /* Hero image */
+  background-position: center;
+  min-height: 300px; /* Flexible height */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content */
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent content bg */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    background-size: contain; /* Adjust image for large screens */
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2a2f2a; /* Button styles */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #17a21e; /* Darker green on hover */
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr; /* Stack sections */
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0; /* Vertical stacking */
+  }
+
+  header h1 {
+    font-size: 1.5em; /* Smaller header */
+  }
+
+  section h2 {
+    font-size: 1.2em; /* Smaller section titles */
+  }
+
+  main {
+    padding: 10px; /* Less padding on mobile */
+  }
+}

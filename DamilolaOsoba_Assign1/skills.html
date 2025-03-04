@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Damilola Osoba" />
+    <meta name="keywords" content="Damilola Skills Section" />
+    <meta
+      name="description"
+      content="A page showcasing my skills and projects."
+    />
+    <title>Skills Section</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* Embedded styles for this page only */
+      .project h3 {
+        color: #111211; /* Green for project titles */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>My Skills and Projects</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Skills Section -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Agile methodologies</li>
+          <li>Django</li>
+          <li>React</li>
+          <li>Advanced concepts in Python and Java</li>
+          <li>API development</li>
+          <li>Version Control</li>
+          <li>Program Management skills</li>
+          <li>Data Structures & Algorithms</li>
+        </ul>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>Project 1: Food Kiosk Web Application: Group Project</h3>
+          <p>
+            A responsive web-based food kiosk application, developed as a group
+            project. This application allows users to place food orders,
+            customize their orders, and proceed with a dummy checkout process.
+          </p>
+          <img
+            src="project1.png"
+            alt="Project 1 Screenshot"
+            class="project-img"
+          />
+          <a
+            href="https://github.com/Damilola24434/-Food-kiosks-web-application"
+            class="github-btn"
+            target="_blank"
+          >
+            View on GitHub
+          </a>
+        </div>
+        <hr />
+        <div class="project">
+          <h3>Project 2: Thread App</h3>
+          <p>
+            A personal time capsule app built with HTML, CSS, and JavaScript.
+            This application allows users to record voice notes or type text
+            reflections, tag each entry with an emotion emoji, and link related
+            entries into threads, creating an organized timeline of personal
+            growth and reflection.
+          </p>
+          <img
+            src="project2.png"
+            alt="Project 2 Screenshot"
+            class="project-img"
+          />
+          <a
+            href="https://github.com/Damilola24434/ThreadApp"
+            class="github-btn"
+            target="_blank"
+          >
+            View on GitHub
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Damilola Osoba. All rights reserved.</p>
+      <div class="social-icons">
+        <a
+          href="https://linkedin.com/in/damilola-osoba-a304ba282/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/Damilola24434" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://twitter.com" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Dark Mode Script -->
+    <script>
+      const toggleButton = document.getElementById("theme-toggle");
+      toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+      });
+    </script>
+  </body>
+</html>
